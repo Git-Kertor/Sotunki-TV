@@ -1,0 +1,75 @@
+﻿<Window x:Name="Backround" x:Class="Sotunki_TV.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sotunki_TV"
+        mc:Ignorable="d"
+        Title="Sotunki-TV-Display" Height="450" Width="800" WindowStyle="None" Topmost="True" WindowState="Maximized" Cursor="None">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+            <GradientStop Color="#FF92B0C1" Offset="0"/>
+            <GradientStop Color="#FF35B5FF" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Viewbox Margin="2">
+        <Grid Height="426" Margin="10,10,0,0" Width="780">
+            <Border x:Name="Border_Time" BorderThickness="5" Height="100" Margin="10,316,447,10" Width="323" BorderBrush="Black" CornerRadius="9">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                        <GradientStop Color="#FF78A3FF" Offset="1"/>
+                        <GradientStop Color="#FF1E6DBB"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Label x:Name="Label_Time" Content="20:00." FontSize="72" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="59,-11,58,11" Foreground="White"/>
+            </Border>
+            <Border x:Name="Border_Time_Copy" BorderThickness="5" Height="100" Margin="338,316,10,10" BorderBrush="Black" CornerRadius="9">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                        <GradientStop Color="#FF78A3FF" Offset="1"/>
+                        <GradientStop Color="#FF1E6DBB"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Image Margin="89,5" Source="Sotunki_Logo.png" Stretch="Fill" OpacityMask="White"/>
+            </Border>
+            <Border x:Name="Border_Time_Copy1" BorderThickness="5" Margin="10,0,531,124" BorderBrush="Black" CornerRadius="9">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                        <GradientStop Color="#FF78A3FF" Offset="1"/>
+                        <GradientStop Color="#FF1E6DBB"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Label x:Name="Bus_Label_1" Content="HSL&#xD;&#xA;V00000&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;V00000&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika" Foreground="White" FontSize="16"/>
+            </Border>
+            <Border x:Name="Border_Time_Copy2" BorderThickness="5" Margin="254,0,287,124" BorderBrush="Black" CornerRadius="9">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                        <GradientStop Color="#FF78A3FF" Offset="1"/>
+                        <GradientStop Color="#FF1E6DBB"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Label x:Name="Bus_Label_2" Content="Aikataulu&#xD;&#xA;V00000&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;V00000&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika&#xD;&#xA;Bus 1 | Aika" Foreground="White" FontSize="16"/>
+            </Border>
+            <Border x:Name="Border_Time_Copy3" BorderThickness="5" Margin="498,193,10,124" BorderBrush="Black" CornerRadius="9">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                        <GradientStop Color="#FF78A3FF" Offset="1"/>
+                        <GradientStop Color="#FF1E6DBB"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Label x:Name="Food_Label" Content="Label" Foreground="White"/>
+            </Border>
+            <Border x:Name="Picture_Border" BorderThickness="5" Margin="498,0,10,238" BorderBrush="Black" CornerRadius="9">
+                <Image x:Name="PictureBox" Margin="5" Source="OpacityPicture.jpg" Stretch="Fill"/>
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                        <GradientStop Color="#FF78A3FF" Offset="1"/>
+                        <GradientStop Color="#FF1E6DBB"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                
+            </Border>
+        </Grid>
+    </Viewbox>
+</Window>
+    
